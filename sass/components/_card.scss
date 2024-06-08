@@ -1,0 +1,15 @@
+.card {
+    background-color: $clr-grey;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: .625rem 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+
+    &:active {
+        background-color: $clr-green;
+        color: $clr-grey;
+    }
+}
