@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@keyframes rotate-scale-down {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(0.3) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 /* Base et init */
 *,
 *::after,
@@ -40,8 +51,9 @@ body {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  transition: all 300ms;
 }
-.card:active {
+.card:active, .card:hover {
   background-color: hsl(75, 94%, 57%);
   color: hsl(0, 0%, 20%);
 }
@@ -64,6 +76,7 @@ body {
   border-radius: 1.25rem;
   padding: 20px;
   margin: 1.875rem;
+  animation: rotate-scale-down 0.45s linear both;
 }
 
 header {

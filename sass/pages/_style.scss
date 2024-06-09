@@ -16,6 +16,7 @@ body {
     border-radius: 1.25rem;
     @include paddingBase;
     margin: 1.875rem;
+    animation: rotate-scale-down 0.45s linear both;
 }
 
 header {
